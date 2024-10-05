@@ -1,21 +1,21 @@
 #==========================================
 # @ConfigName        自用MihomoParty配置文件
 # @Author            @3S-AC
-# @UpdateTime        2024/10/01 00:00 UTC/GMT +8
+# @UpdateTime        2024/10/06 00:00 UTC/GMT +8
 # @Function          支持手动选择、自动测速、兜底分流、按国家分组节点、策略图标等  
 # @mihomo-party      https://github.com/mihomo-party-org/mihomo-party/releases
 # @howtouse          主界面添加本配置[覆写]，然后使用内置的[SubStore]添加机场，之后去[订阅管理]，在配置的[编辑信息]中绑定机场订阅，开启系统代理即可使用
 # @Thanks            @blackmatrix7, @Orz-3
-# @ConfigVersion     1.0.0
+# @ConfigVersion     1.1.0
 #==========================================
 
 proxy-groups:
 #分流分组
-  - {name: 手动切换, type: select, include-all: true, icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/shadowrocket.png }
+  - {name: 手动切换, type: select, include-all: true, icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png }
   - {name: 全球加速, type: select, proxies: [手动切换, DIRECT, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点], icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png }
   - {name: 苹果服务, type: select, proxies: [DIRECT, 手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点], icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png }
   - {name: 哔哩哔哩, type: select, proxies: [DIRECT, 香港节点, 台湾节点], icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/bilibili.png }
-  - {name: OpenAI,   type: select, proxies: [美国节点, 手动切换], icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png }
+  - {name: OpenAI, type: select, proxies: [美国节点, 手动切换], icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png }
   - {name: 微软服务, type: select, proxies: [DIRECT, 手动切换, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点], icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png }
   - {name: 国际媒体, type: select, proxies: [手动切换, DIRECT, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点], icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png }
   - {name: 谷歌服务, type: select, proxies: [手动切换, DIRECT, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点], icon: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png }
@@ -48,18 +48,18 @@ rule-providers:
   
 # 分流Policy 
 rules:
-  - RULE-SET,Direct,DIRECT
-  - RULE-SET,Lan,DIRECT
-  - RULE-SET,Download,DIRECT
   - RULE-SET,OpenAI,OpenAI
   - RULE-SET,BiliBili,哔哩哔哩
-  - RULE-SET,Scholar,DIRECT
   - RULE-SET,GlobalMedia,国际媒体
   - RULE-SET,Apple,苹果服务
   - RULE-SET,Microsoft,微软服务
   - RULE-SET,Google,谷歌服务
   - RULE-SET,Telegram,电报消息
-  - RULE-SET,ProxyLite,全球加速
+  - RULE-SET,ProxyLite,全球加速  
+  - RULE-SET,Direct,DIRECT
+  - RULE-SET,Lan,DIRECT  
+  - RULE-SET,Scholar,DIRECT
+  - RULE-SET,Download,DIRECT
   - RULE-SET,ChinaIP,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流

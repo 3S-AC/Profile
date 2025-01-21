@@ -6,6 +6,8 @@ payload:
  - DOMAIN, gateway.icloud.com
  - DOMAIN, metrics.icloud.com
 #XPTV封面来源
+#EMBY
+ - DOMAIN, hxd.as174.de
 #小海报
  - DOMAIN-SUFFIX, doubanio.com
 #大封面

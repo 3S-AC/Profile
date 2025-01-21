@@ -86,6 +86,7 @@ proxy-groups:
 rule-providers:
   Direct:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Direct/Direct.yaml ,                path: ./ruleset/Direct.yaml       }
   Lan:         {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml ,                      path: ./ruleset/Lan.yaml          }
+  ChinaMedia:  {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/3S-AC/Profile/refs/heads/main/Rule/ChinaMedia.yaml ,                               path: ./ruleset/ChinaMedia.yaml   }
   Download:    {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml ,            path: ./ruleset/Download.yaml     }
   OpenAI:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml ,                path: ./ruleset/OpenAI.yaml       }
   Github:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml ,                path: ./ruleset/Github.yaml       }
@@ -111,5 +112,6 @@ rules:
   - RULE-SET,Scholar,DIRECT
   - RULE-SET,Download,DIRECT
   - RULE-SET,ChinaIP,DIRECT
+  - RULE-SET,ChinaMedia,DIRECT  
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流

@@ -7,6 +7,7 @@ payload:
  - DOMAIN, metrics.icloud.com
 #XPTV封面来源
 #EMBY
+ - DOMAIN, cf.bili.rip
  - DOMAIN, hxd.as174.de
 #小海报
  - DOMAIN-SUFFIX, doubanio.com

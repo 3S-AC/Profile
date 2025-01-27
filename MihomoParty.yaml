@@ -15,6 +15,7 @@ proxy-groups:
   - {name: 全球直连, type: select, proxies: [DIRECT, 手动切换], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/China.png }
   - {name: 全球加速, type: select, proxies: [手动切换, DIRECT, 自动选择, 官方节点, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png }
   - {name: 苹果服务, type: select, proxies: [DIRECT, 手动切换, 自动选择, 官方节点, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png }
+  - {name: 谷歌服务, type: select, proxies: [手动切换, DIRECT, 自动选择, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点], icon: https://ghp.ci/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png }
   - {name: OpenAI, type: select, proxies: [美国节点, 手动切换], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png }
   - {name: 兜底分流, type: select, proxies: [手动切换, DIRECT, 自动选择, 官方节点, 香港节点, 日本节点, 台湾节点, 美国节点, 狮城节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png }
   

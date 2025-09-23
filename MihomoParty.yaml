@@ -11,7 +11,7 @@
 
 proxy-groups:
 #分流分组
-  - {name: 全球加速, type: select, proxies: [台湾节点, 美国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png }
+  - {name: 全球加速, type: url-test, proxies: [台湾节点, 美国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png }
   - {name: 智能助手, type: select, proxies: [美国节点, 全球加速], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png }
   - {name: 兜底分流, type: select, proxies: [全球加速, DIRECT], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png }
   

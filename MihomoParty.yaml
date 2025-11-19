@@ -42,17 +42,13 @@ rule-providers:
   Lan:         {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/3S-AC/Mihomo/refs/heads/main/Lan.yaml ,                                            path: ./ruleset/Lan.yaml          }
   AI:          {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/3S-AC/Mihomo/refs/heads/main/AI.yaml ,                                             path: ./ruleset/AI.yaml           }
   Scholar:     {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/3S-AC/Mihomo/refs/heads/main/Scholar.yaml ,                                        path: ./ruleset/Scholar.yaml      } 
-  Apple:       {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/3S-AC/Mihomo/refs/heads/main/Apple.yaml ,                                          path: ./ruleset/Apple.yaml        }
-  Microsoft:   {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/3S-AC/Mihomo/refs/heads/main/Microsoft.yaml ,                                      path: ./ruleset/Microsoft.yaml    }
   CNMedia:     {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/3S-AC/Mihomo/refs/heads/main/CNMedia.yaml ,                                        path: ./ruleset/CNMedia.yaml      }   
 # 分流Policy 
 rules:
   - RULE-SET,AI,智能助手
-  - RULE-SET,Apple,DIRECT
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Lan,DIRECT
   - RULE-SET,Scholar,DIRECT
-  - RULE-SET,Microsoft,DIRECT
   - RULE-SET,CNMedia,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
